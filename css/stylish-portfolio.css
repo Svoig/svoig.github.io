@@ -155,11 +155,21 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Dawn_Patrol_Pano.jpg/1920px-Dawn_Patrol_Pano.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.header h1 {
+  color: #5B7495;
+  text-shadow: 0px 0px 2px black;
+}
+
+.header h3 {
+  color: #E3CF82;
+  text-shadow: 0px 0px 1px black;
 }
 
 /* About */

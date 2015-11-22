@@ -29,12 +29,63 @@ body {
     font-weight: 700;
 }
 
+
+/* Accordion Menu Styles */
+
+.tab-group {
+  margin: 0 auto;
+  max-width: 40em;
+  width: 100%;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+
+.tab label {
+  background: #295CCC;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding-left: .5em;
+  margin-bottom: .5em;
+  transition: letter-spacing .55s;
+}
+
+.tab input:focus + label,
+.tab label:hover {
+  background: #6D95ED;
+  letter-spacing: 2px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 100em;
+}
 /* Custom Button Styles */
 
 .btn-dark {
-    border-radius: 0;
+    border-radius: 30;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
 }
 
 .btn-dark:hover,
@@ -163,19 +214,29 @@ hr.small {
 }
 
 .header h1 {
-  color: #5B7495;
+  color: #fff;
   text-shadow: 0px 0px 2px black;
 }
 
 .header h3 {
-  color: #E3CF82;
+  color: #fff;
   text-shadow: 0px 0px 1px black;
+}
+
+.header  a {
+  margin: 20px 20px 20px 20px;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,0.2);
 }
 
 /* About */
 
 .about {
     padding: 50px 0;
+    background-color: #CAD2E3
 }
 
 /* Services */

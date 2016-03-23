@@ -1,0 +1,149 @@
+/* Structure styles */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+#content {
+	padding-bottom: 200px;	/*Height of the footer */
+	padding-top: 100px;		/* Height of header */
+}
+
+#footer {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* General styles */
+a {
+	text-decoration: none;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+	color: #6E6183;
+}
+
+/*a:visited {
+	text-decoration: none;
+	color: #6E6183;
+}*/
+
+a:visited:hover {
+	color: #6E6183;
+}
+
+li {
+	list-style: none;
+}
+
+/*Navigation styling */
+
+.nav {
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	top: -16px;
+	left: 0px;
+	z-index: 1000;
+}
+
+.nav-bar {
+	height: 50px;
+	width: 100%;
+	background-color: #09070D;
+	text-align: center;
+}
+
+
+.nav-list li{
+	display: inline;
+	width: 20%;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 0;
+	border: 3px solid black;
+}
+
+.title {
+	/*Positioning*/
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: white;
+}
+
+.title h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+/* Footer */
+
+#footer h3 {
+	position: ;
+	font-family: "Open Sans", sans-serif;
+	margin: auto;
+}
+
+.contact {
+	background-color: #09070D;
+	height: 50px;
+	text-align: center;
+}
+
+.contact li {
+	display: inline;
+}
+
+.contact li a {
+	display: inline;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/* Bootstrap custom extensions */
+
+.chevron-white {
+	color: red;
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 7px;
+}

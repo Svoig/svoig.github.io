@@ -1,183 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+	<title>Harrison Cole</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<!-- jQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    <title>Harrison Cole</title>
+	<!-- Blurr -->
+	<script src="jquery.blurr.js"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="./js/main.js"></script>
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+	<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- /BOOTSTRAP -->
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Portland-Based Web Development</h1>
-            <h3>Harrison Cole</h3>
-            <br>
-            <a href="https://www.linkedin.com/in/harrison-cole-682a46106
-" class="fa fa-linkedin-square fa-5x"></a>
-            <a href="https://twitter.com/donsignor" class="fa fa-twitter fa-5x"></a>
-            <a href="mailto:harrisonccole@gmail.com" class="fa fa-envelope-o fa-5x"></a>
-        </div>
-    </header>
+<div id='wrapper'>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Freelance Web Developer</h2>
-                    
-                </div>
-            </div>
-            <!-- /.row -->
+	<div id='header'>
+		<div class='nav'>
+			<div class='nav-bar'>
+				
+				<ul class='nav-list'>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="../list">Available channels</a>
+					</li>
+					<li>
+						<a href="../message">Post a bot message</a>
+					</li>
+					<li>
+						<a href="../invite">Request an invite</a>
+					</li>
+				</ul>
 
-            <!-- Accordion Menu -->
+				<div class="peek">
+					<i id="contact-arrow" class="glyphicon glyphicon-chevron-down chevron-white"></i>
+				<br>
 
-            <div class="tab-group">
-              <div class="tab">
-                <input id="tab-one" type="radio" name="tabs">
-                <label for="tab-one">What I do</label>
-                <div class="tab-content">
-                  <p>I work closely with my clients to build exactly the product they need. As a full-stack developer, I handle the full range of web development needs, from websites and apps to servers and databases.</p>
-                </div>
-              </div>
+				</div>
 
-              <div class="tab">
-                <input id="tab-two" type="radio" name="tabs">
-                <label for="tab-two">My Work</label>
-                <div class="tab-content">
-                  <h3>Issue Tracker</h3>
-                  <p>During my coding bootcamp, I worked with two other students to create a web app to track the status of multiple tasks. The app allows users to create tasks and assign them to other users, as well as to see who owns each task.</p>
-                  <h3>Memory Game</h3>
-                  <p>Another project at my coding bootcamp was to create a "Memory" game, in which the player turns cards over trying to find two matching cards.</p>
-                  <h3>Steamer</h3>
-                  <p>Steamer is a Twitter-like web app created for a bootcamp project.</p>
-                </div>
-              </div>
+				<div id="blur-header"></div>
+				<!-- End nav-bar -->
+			</div>
+			<!-- End nav -->
+		</div>
+		<!-- End Header -->
+	</div>
 
-              <div class="tab">
-                <input id="tab-three" type="radio" name="tabs">
-                <label for="tab-three">My Story</label>
-                <div class="tab-content">
-                  <p>I am a Russian major at Portland State University, but my true passion is code. After several months of individual study, I attended a coding bootcamp in Portland, OR. Now I am a full-stack freelancer, building websites, web apps, servers, and whatever else my clients need to connect with their users.</p>
-                </div>
-              </div>
+	<div id='content'>
+		</div>
 
-            </div>
-            <!-- /.tab-group -->
-        </div>
-        <!-- /.container -->
-    </section>
+		<div class='jumbotron'>
+			<div class='title' tooltip='We want your money'>
+				<h1>AutoSlacker</h1>
+			</div>
+			<img src='./HawthorneBridge-Pano.jpg'/>
+		</div>
+	<!-- End content -->
+	</div>
 
-
-<div class='slideshow'>
-    <div class='list-container'>
-
-        <div id= 'slide-nar'>
-            <div id='right-arrow'>
-            </div>
-
-            <div id='left-arrow'>
-            </div>
-       </div>
-
-        <ul class='image-list'>
-            <li id='first' class='active'>
-                <div>
-                </div>
-            </li>
-
-            <li id='second'>
-                <a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/7%E0%B8%99%E0%B8%B2%E0%B8%AC%E0%B8%B4%E0%B8%81%E0%B8%B2_%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%81_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%82%E0%B8%84%E0%B9%80%E0%B8%9B%E0%B8%99%E0%B9%80%E0%B8%AE%E0%B9%80%E0%B8%81%E0%B8%99_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%81_19%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A12552_%28_-_Flickr_-_Abhisit_Vejjajiva.jpg/800px-thumbnail.jpg"/>
-                </a>
-            </li>
-
-            <li id='third'>
-                <a href="#">
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Blue_tiles_%28283113377%29.jpg/800px-Blue_tiles_%28283113377%29.jpg'/>
-                </a>
-            </li>
-
-        </ul>
-        
-       
-
-    </div>
-
-
+	<div id='footer'>
+	<br>
+		<div class='contact'>			
+			<div class='peek'>
+				<i id="nav-arrow" class="glyphicon glyphicon-chevron-up chevron-white"></i>
+			</div>
+			<br>
+			<br>
+			<ul>
+				<!-- Eventually I want to add icons -->
+				<li>
+					<a href="http://twitter.com/donsignor">
+						Twitter
+					</a>
+				</li>
+				<li>
+					<a href="http://linkedin.com/in/harrisonccole">
+						LinkedIn
+					</a>
+				</li>
+				<li>
+					<a href="mailto:harrisonccole@gmail.com">
+						harrisonccole@gmail.com
+					</a>
+				</li>
+				<li>
+					<a href="github.com/svoig">
+						github.com/svoig
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end Footer -->
+	</div>
+<!-- End wrapper -->
 </div>
 
-    
-
-   
-
-    
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
 </body>
-
 </html>

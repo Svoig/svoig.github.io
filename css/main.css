@@ -114,13 +114,10 @@ li {
 /*Jumbotron*/
 
 .jumbotron {
-	height: 100px;
-	width: 100px;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	margin: auto;
 	z-index: 0;
 	border: 3px solid black;
@@ -136,23 +133,35 @@ img {
 	z-index: 0;
 }
 
-.title {
-	/*Positioning*/
-	height: 50px;
-	width: 50px;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	background-color: white;
+
+#title {
+	visibility: hidden;
+	vertical-align: middle;
+	position: fixed;
+	top: 38%;
+	left: 35%;
+	text-align: center;
+	overflow: hidden;
+	z-index: 9999;
 }
 
-.title h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	text-indent: 5px;
+#title h1 {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 80px;
+	display: inline-block;
+	color: #fff;
+}
+
+#blur {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+	background-image: url("../HawthorneBridge-Pano.jpg");
 }
 
 /* Footer */
@@ -165,12 +174,10 @@ img {
 }
 
 .contact {
+	z-index: 99999;
 	background-color: #09070D;
 	height: 100px;
 	text-align: center;
-}
-.contact::after {
-	-webkit-filter: blur(2px);
 }
 
 .contact li {
